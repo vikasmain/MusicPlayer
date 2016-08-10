@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <transitionSet android:startDelay="@integer/anim_duration_default" android:duration="@integer/anim_duration_default" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <fade>
+
+
+    <targets>
+
+    <target android:targetId="@id/pane"/>
+
+</targets>
+
+</fade>
+
+
+    <slide android:slideEdge="bottom">
+
+
+    <targets>
+
+    <target android:excludeId="@android:id/statusBarBackground"/>
+
+    <target android:excludeId="@id/pane"/>
+
+    <target android:excludeId="@android:id/navigationBarBackground"/>
+
+</targets>
+
+</slide>
+
+</transitionSet>

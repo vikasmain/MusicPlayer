@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<objectAnimator android:valueType="floatType"
+    android:valueTo="0" android:valueFrom="270" android:propertyName="rotation"
+    android:duration="@integer/anim_duration_default" xmlns:android="http://schemas.android.com/apk/res/android"/>

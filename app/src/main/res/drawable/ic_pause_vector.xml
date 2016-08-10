@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+    <vector android:viewportWidth="24" android:viewportHeight="24" android:height="24dp" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:rotation="-90" android:pivotY="12" android:pivotX="12" android:name="rotation">
+
+    <path android:name="pause" android:pathData="@string/pause_vector_path" android:fillColor="@android:color/white"/>
+
+</group>
+
+</vector>

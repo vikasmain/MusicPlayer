@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <com.example.dell.musicplayer.view.InsetsPercentRelativeLayout android:fitsSystemWindows="true" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.example.dell.musicplayer.view.CoverView android:layout_width="match_parent" app:trackAlpha="255" app:shape="circle" app:layout_heightPercent="35%" android:transitionName="@string/transition_name_cover" android:src="@drawable/album_cover_daft_punk" android:scaleType="centerInside" android:layout_centerInParent="true" android:id="@+id/cover"/>
+
+    <include android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/title" app:layout_marginTopPercent="10%" android:layout_centerHorizontal="true" layout="@layout/track_title"/>
+
+    <com.example.dell.musicplayer.view.ProgressView app:layout_heightPercent="40%" android:transitionName="@string/transition_name_progress" android:layout_centerInParent="true" android:id="@+id/progress" app:layout_aspectRatio="100%"/>
+
+    <android.support.design.widget.FloatingActionButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:transitionName="@string/transition_name_fab" android:src="@drawable/ic_pause_animatable" android:scaleType="center" android:layout_centerInParent="true" android:id="@+id/fab" android:onClick="onFabClick"/>
+
+    <Space android:layout_height="wrap_content" android:id="@+id/timers_anchor" android:layout_centerHorizontal="true" app:layout_widthPercent="25%" android:layout_below="@id/cover"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:transitionName="@string/transition_name_time" android:id="@+id/time" tools:text="02:30" android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:layout_toStartOf="@id/timers_anchor" android:layout_alignTop="@id/timers_anchor"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:transitionName="@string/transition_name_duration" android:id="@+id/duration" tools:text="04:30" android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:layout_alignTop="@id/timers_anchor" android:layout_toEndOf="@id/timers_anchor"/>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ordering" android:layout_centerHorizontal="true" android:layout_below="@id/time" android:transitionGroup="true">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_repeat_white_24dp" android:id="@+id/repeat" android:clickable="true" android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <Space android:layout_height="wrap_content" android:layout_width="@dimen/activity_horizontal_margin"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_shuffle_white_24dp" android:id="@+id/shuffle" android:clickable="true" android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/controls" android:transitionGroup="true" app:layout_marginBottomPercent="5%" android:gravity="center_horizontal" android:layout_alignParentBottom="true">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_skip_previous_white_24dp" android:id="@+id/previous" style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_fast_rewind_white_24dp" android:id="@+id/rewind" style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_fast_forward_white_24dp" android:id="@+id/forward" style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ic_skip_next_white_24dp" android:id="@+id/next" style="@style/Widget.AppCompat.Button.Borderless"/>
+
+</LinearLayout>
+
+</com.example.dell.musicplayer.view.InsetsPercentRelativeLayout>

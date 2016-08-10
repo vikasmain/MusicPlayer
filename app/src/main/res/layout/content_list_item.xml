@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <FrameLayout android:transitionGroup="true" android:minHeight="?attr/listPreferredItemHeight" android:foreground="?attr/selectableItemBackground" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin" android:gravity="center_vertical" android:layout_gravity="center_vertical">
+
+    <ImageView android:layout_height="@dimen/cover_size_mini" android:layout_width="@dimen/cover_size_mini" tools:src="@drawable/album_cover_daft_punk" android:scaleType="centerCrop" android:id="@+id/cover"/>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="1" android:layout_marginStart="@dimen/inner_padding">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/title" android:textAppearance="@style/TextAppearance.AppCompat.Title" android:singleLine="true"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/artist" android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:singleLine="true"/>
+
+</LinearLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/duration" android:layout_marginStart="@dimen/inner_padding" android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+</LinearLayout>
+
+</FrameLayout>

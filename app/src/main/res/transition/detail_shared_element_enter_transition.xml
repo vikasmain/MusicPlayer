@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <transitionSet android:interpolator="@android:interpolator/accelerate_quad" android:duration="@integer/anim_duration_default" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Progress-->
+
+
+    <transition class="com.example.dell.musicplayer.transition.ProgressViewTransition"/>
+
+    <!--Cover-->
+
+
+    <transition class="com.example.dell.musicplayer.transition.CoverViewTransition"/>
+
+    <!--Others-->
+
+
+
+    <transitionSet>
+
+    <changeBounds/>
+
+    <changeTransform/>
+
+    <changeClipBounds/>
+
+    <changeImageTransform/>
+
+</transitionSet>
+
+</transitionSet>
